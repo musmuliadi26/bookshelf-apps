@@ -1,0 +1,59 @@
+<!doctype html>
+<html id="home">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bookshelf Apps</title>
+    <link rel="stylesheet" href="assets/styles/style.css">
+    <link href="assets/fw/fwb/css/all.css" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo"><h1>Bookshelf Apps</h1></div>
+          <ul class="darkmode">
+            <span onclick="setDarkMode()" id="darkBtn" class="mt-1"><h1><i class="fas fa-moon"></i></h1></span>
+          </ul>
+      </nav>
+    </header>
+
+    <main> 
+      <section class="inputbuku">
+        <h1><i class="far fa-plus-square"></i> Tambah Buku</h1>
+        <form id="form">
+          <div class="input">
+            <input id="title" type="text" placeholder="Judul Buku" required>
+          </div>
+          <div class="input">
+            <input id="author" type="text" placeholder="Penulis" required>
+          </div>
+          <div class="input">
+            <input id="year" type="date" id="inputBookYear" min="1900" max="2027" required>
+          </div>
+          <button id="bookSubmit" type="submit">Tambah Buku</button>
+        </form>
+      </section>
+
+      <section class="jmhbuku">
+        <h1>Jumlah Buku</h1>
+        <h2 id="jumlahBuku">20</h2>
+      </section>
+
+      <section class="bookshelf">
+        <div class="unread" id="unread">
+          <h1 class=""><i class="fas fa-book"></i> Belum Dibaca</h1>
+        </div>
+        <div class="read" id="read">
+          <h1><i class="fas fa-book-open"></i> Sudah Dibaca</h1>
+        </div>
+      </section> 
+    </main>
+
+    <footer>
+      <p class="penghalang"></p>
+      <p> &#169;2021 | <span>Bookshelf Apps</span></p>
+    </footer>
+
+    <script src="assets/script/main.js"></script>
+    <script src="assets/script/storage.js"></script>
+  </body>
+</html>

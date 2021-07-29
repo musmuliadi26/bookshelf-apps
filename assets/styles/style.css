@@ -1,0 +1,181 @@
+/*google font*/
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@700&family=Quicksand&display=swap');
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+body {
+   font-family: 'Quicksand', sans-serif;
+}
+header {
+   display: inline;
+}
+nav {
+	display: flex;
+	justify-content: space-around;
+	position: sticky;
+   top: 0;
+   background-color: #f2f2f2;
+}
+nav .darkmode {
+	display: flex;
+	list-style: none;
+	align-items: center;
+	margin: 20px;
+}
+#darkBtn {
+   cursor: pointer;
+}
+nav .logo {
+	font-family: 'Kalam', cursive;
+	margin: 20px;
+}
+main {
+	max-width: 800px;
+	width: 80%;
+	margin: 0 auto;
+	padding: 16px;
+}
+.jmhbuku, .inputbuku, .unread, .read {
+	margin: 20px 0;
+}
+.jmhbuku {
+   padding: 16px;
+   border-radius: 5px;
+   text-align: center;
+   border: 0.5px solid gray;
+}
+.inputbuku {
+	display: flex;
+   flex-direction: column;
+   padding: 16px;
+   border-radius: 5px;
+   border: 0.5px solid gray;
+}
+.inputbuku h1 {
+   text-align: center;
+}
+.inputbuku > form > .input {
+   margin: 20px 0;
+}
+.inputbuku > form > button {
+	margin: 0 auto;
+   background-color: #f2f2f2;
+   border-radius: 5px;
+   display: block;
+   width: 50%;
+   padding: 8px;
+   cursor: pointer;
+}
+.inputbuku > form > .input > input {
+	margin: 0 auto;
+   display: block;
+   width: 80%;
+   padding: 8px;
+   border-radius: 5px;
+}
+.unread, .read {
+	padding: 16px;
+	border-radius: 5px;
+	border: 0.5px solid gray;
+}
+.unread h1, .read h1 {
+	text-align: center;
+}
+.read .my-container ,
+.unread .my-container  {
+	border: 1px solid gray;
+	border-radius: 5px;
+  	display: flex;
+ 	margin: 15px;
+  	padding: 5px;
+  	align-items: center;
+  	box-sizing: border-box !important;
+  	justify-content: space-around;
+}
+.detail-book {
+  	padding: 5px;
+}
+.check-button {
+   background: url('../icons/check-circle-regular.svg');
+   background-size: contain;
+   width: 40px;
+   height: 40px;
+   margin-left: auto;
+   margin-right: 10px;
+   cursor: pointer;
+   border: none;
+}
+.check-button:hover {
+   background: url('../icons/check-circle-solid.svg');
+   background-size: contain;
+}
+.trash-button{
+   background: url('../icons/trash-alt-regular.svg');
+   background-size: contain;
+   width: 35px;
+   height: 40px;
+   margin-left: 16px;
+   margin-right: 10px;
+   cursor: pointer;
+   border: none;
+}
+.trash-button:hover {
+   background: url('../icons/trash-alt-solid.svg');
+   background-size: contain;
+}
+.undo-button{
+    background: url('../icons/undo-alt-solid.svg');
+    background-size: contain;
+    width: 40px;
+    height: 40px;
+    margin-left: auto;
+    margin-right: 10px;
+    cursor: pointer;
+    border: none;
+}
+.undo-button:hover {
+    background: url('../icons/undo-solid.svg');
+    background-size: contain;
+}
+.check-button:focus, .trash-button {
+    outline: none;
+}
+footer {
+	display: flex;
+	justify-content: space-around;
+	margin-top: 20px;
+   padding: 20px;
+   height: 235px;
+   background-color: #f2f2f2;
+   font-weight: bold;
+}
+footer .penghalang {
+	width: 50px;
+	height: 50px;
+}
+footer p span {
+	font-family: 'Kalam', cursive;
+}
+
+/*darkmode*/
+.dark {
+   color: white;
+   background-color: #414c50;
+}
+
+.dark nav {
+   background-color: #2d383c;
+}
+.dark footer {
+   background-color: #2d383c; 
+}
+
+/*responsive breakpoint*/
+@media all and (max-width: 800px) {
+	main {
+		width: 100%;
+	}
+}
